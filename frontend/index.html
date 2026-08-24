@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClaimBridge - Medical Claim Processing Platform</title>
+  <meta name="description" content="ClaimBridge — Professional CMS-1500 medical claim processing with AI-powered OCR extraction, validation, and human review workflows.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="logo-badge">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#1e40af"/>
+              <stop offset="100%" stop-color="#3b82f6"/>
+            </linearGradient>
+          </defs>
+          <rect width="36" height="36" rx="10" fill="url(#logo-grad)"/>
+          <!-- Document icon -->
+          <path d="M11 8h9l5 5v14a2 2 0 01-2 2H11a2 2 0 01-2-2V10a2 2 0 012-2z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M20 8v5h5" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Cross/plus for medical -->
+          <rect x="14" y="17" width="8" height="2" rx="1" fill="white" opacity="0.9"/>
+          <rect x="17" y="14" width="2" height="8" rx="1" fill="white" opacity="0.9"/>
+        </svg>
+      </div>
+      <div>
+        <h1 class="brand-title">ClaimBridge</h1>
+        <p class="brand-subtitle">CMS-1500 Intelligent Medical Claim Pipeline</p>
+      </div>
+    </div>
+
+    <div class="header-status-area">
+      <div class="engine-status-pill">
+        <span class="status-dot"></span>
+        <span id="engine-status-text">PaddleOCR (CPU) Active</span>
+      </div>
+
+      <div class="mode-toggle">
+        <button id="mode-live-btn" class="mode-btn active" onclick="setAppMode('live')">Live Backend</button>
+        <button id="mode-demo-btn" class="mode-btn" onclick="setAppMode('demo')">Demo Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- KPI Metric Cards -->
+    <section class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-label">Claims Received</span>
+        <span id="kpi-total-claims" class="metric-value">0</span>
+        <span class="metric-sub">Total claims processed</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Auto-Approved</span>
+        <span id="kpi-auto-approved" class="metric-value" style="color: var(--success);">0</span>
+        <span class="metric-sub">Zero validation errors</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Needs Review</span>
+        <span id="kpi-needs-review" class="metric-value" style="color: var(--warning);">0</span>
+        <span class="metric-sub">Human audit recommended</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Average Confidence</span>
+        <span id="kpi-avg-confidence" class="metric-value" style="color: var(--primary);">0.0%</span>
+        <span class="metric-sub">Field-level OCR score</span>
+      </div>
+    </section>
+
+    <!-- VIEW 1: Dashboard / Queue View -->
+    <div id="queue-view" class="dashboard-grid">
+      
+      <!-- Left: Upload Panel -->
+      <aside class="upload-panel">
+        <div class="panel-header">
+          <h2 class="panel-title">Upload CMS-1500</h2>
+        </div>
+
+        <div id="dropzone" class="dropzone">
+          <div class="dropzone-icon">📄</div>
+          <div class="dropzone-text">
+            <strong>Click to browse</strong> or drag & drop<br>CMS-1500 PDF / PNG files
+          </div>
+          <div class="dropzone-sub">Supports single or multi-file batch upload</div>
+          <input type="file" id="file-input" class="file-input" multiple accept=".pdf,.png,.jpg,.jpeg">
+        </div>
+
+        <!-- Selected Files List -->
+        <div id="file-queue-container" style="display: none;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.25rem;">
+            <span>Selected Files (<span id="selected-file-count">0</span>)</span>
+            <button class="remove-file-btn" onclick="clearSelectedFiles()" style="font-size: 0.75rem;">Clear</button>
+          </div>
+          <div id="file-queue-list" class="file-queue-list"></div>
+        </div>
+
+        <button id="process-btn" class="btn-primary" onclick="startProcessing()" disabled>
+          <span>Process Claims</span>
+        </button>
+
+        <!-- Progress Tracker -->
+        <div id="progress-card" class="processing-progress-card" style="display: none;">
+          <div class="progress-header">
+            <span id="progress-status-label">Processing...</span>
+            <span id="progress-pct-label">0%</span>
+          </div>
+          <div class="progress-bar-container">
+            <div id="progress-bar-fill" class="progress-bar-fill"></div>
+          </div>
+          <div class="progress-stages">
+            <span id="stage-upload" class="stage-step">Upload</span>
+            <span id="stage-render" class="stage-step">Render</span>
+            <span id="stage-ocr" class="stage-step">OCR</span>
+            <span id="stage-extract" class="stage-step">Extract</span>
+            <span id="stage-validate" class="stage-step">Validate</span>
+          </div>
+        </div>
+
+        <!-- Recent Uploads Mini-List -->
+        <div id="recent-uploads-panel" class="recent-uploads-section" style="display: none;">
+          <span class="recent-uploads-title">Recent Uploads</span>
+          <div id="recent-uploads-list"></div>
+        </div>
+      </aside>
+
+      <!-- Right: Claims Table -->
+      <section class="claims-panel">
+        <div class="table-toolbar">
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all" onclick="filterClaims('all')">All Claims</button>
+            <button class="filter-tab" data-filter="processed" onclick="filterClaims('processed')">Processed</button>
+            <button class="filter-tab" data-filter="needs_review" onclick="filterClaims('needs_review')">Needs Review</button>
+            <button class="filter-tab" data-filter="approved" onclick="filterClaims('approved')">Approved</button>
+            <button class="filter-tab" data-filter="rejected" onclick="filterClaims('rejected')">Rejected</button>
+          </div>
+
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search by patient, ID, file..." oninput="handleSearch(this.value)">
+            <button class="btn-secondary" onclick="exportCsv()">Export CSV</button>
+          </div>
+        </div>
+
+        <!-- Row Count -->
+        <div id="table-row-count" class="table-row-count"></div>
+
+        <div class="table-wrapper">
+          <table class="claims-table">
+            <thead>
+              <tr>
+                <th>Claim ID</th>
+                <th>Filename</th>
+                <th>Patient Name</th>
+                <th>Insured ID</th>
+                <th class="sortable" data-sort="total_charge" onclick="toggleSort('total_charge')">Total ($) <span class="sort-indicator">↕</span></th>
+                <th class="sortable" data-sort="confidence_score" onclick="toggleSort('confidence_score')">Confidence <span class="sort-indicator">↕</span></th>
+                <th>Status</th>
+                <th>Validation</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="claims-tbody">
+              <tr>
+                <td colspan="9" style="text-align: center; color: var(--text-muted); padding: 3rem;">
+                  No claims processed yet. Upload a CMS-1500 PDF or load demo data.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 2: Detail & Verification Workspace -->
+    <div id="detail-view" class="detail-workspace">
+      
+      <!-- Left: Real Document Preview -->
+      <aside class="doc-viewer-panel">
+        <div class="viewer-toolbar">
+          <button class="btn-secondary" onclick="closeDetailView()">← Back to Queue</button>
+          <div class="zoom-controls">
+            <button class="zoom-btn" onclick="zoomDoc(-0.1)">-</button>
+            <button class="zoom-btn" onclick="resetZoom()">Fit</button>
+            <button class="zoom-btn" onclick="zoomDoc(0.1)">+</button>
+          </div>
+        </div>
+        <div class="doc-viewport">
+          <img id="detail-claim-image" class="doc-image" src="" alt="CMS-1500 Claim Document">
+        </div>
+      </aside>
+
+      <!-- Middle: Categorized Extracted Fields Form -->
+      <section class="fields-panel">
+        <div class="viewer-toolbar">
+          <span style="font-weight: 700; font-size: 0.95rem;">Extracted Claim Data</span>
+          <span id="detail-claim-id-badge" class="claim-id-badge"></span>
+        </div>
+
+        <div class="fields-scroll">
+          
+          <!-- Patient Group -->
+          <div>
+            <h3 class="field-group-title">Patient Demographics (Boxes 2, 3, 5)</h3>
+            <div class="field-grid-2">
+              <div class="field-item">
+                <label class="field-label">Patient Name (Last, First, MI)</label>
+                <input type="text" id="field-patient-name" class="field-input" onchange="markFieldEdited('patient.name', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Date of Birth (DD/MM/YYYY)</label>
+                <input type="text" id="field-patient-dob" class="field-input" onchange="markFieldEdited('patient.dob', this.value)">
+              </div>
+            </div>
+            <div class="field-grid-3" style="margin-top: 0.5rem;">
+              <div class="field-item">
+                <label class="field-label">Street Address</label>
+                <input type="text" id="field-patient-street" class="field-input" onchange="markFieldEdited('patient.address.street', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">City, State, Zip</label>
+                <input type="text" id="field-patient-city-state-zip" class="field-input" onchange="markFieldEdited('patient.address.city', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Telephone</label>
+                <input type="text" id="field-patient-phone" class="field-input" onchange="markFieldEdited('patient.address.phone', this.value)">
+              </div>
+            </div>
+          </div>
+
+          <!-- Insurance Group -->
+          <div>
+            <h3 class="field-group-title">Insurance Details (Boxes 1a, 4, 11)</h3>
+            <div class="field-grid-2">
+              <div class="field-item">
+                <label class="field-label">Insured I.D. Number</label>
+                <input type="text" id="field-insured-id" class="field-input" onchange="markFieldEdited('insurance.insured_id', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Insured's Name</label>
+                <input type="text" id="field-insured-name" class="field-input" onchange="markFieldEdited('insurance.insured_name', this.value)">
+              </div>
+            </div>
+            <div class="field-grid-2" style="margin-top: 0.5rem;">
+              <div class="field-item">
+                <label class="field-label">Policy / Group Number</label>
+                <input type="text" id="field-policy-group" class="field-input" onchange="markFieldEdited('insurance.policy_group', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Insurance Plan Name</label>
+                <input type="text" id="field-plan-name" class="field-input" onchange="markFieldEdited('insurance.plan_name', this.value)">
+              </div>
+            </div>
+          </div>
+
+          <!-- Diagnoses -->
+          <div>
+            <h3 class="field-group-title">Diagnoses (Box 21 ICD-10)</h3>
+            <div class="field-grid-2">
+              <div class="field-item">
+                <label class="field-label">Diagnosis Codes (A, B, C, D)</label>
+                <input type="text" id="field-diagnosis-codes" class="field-input" onchange="markDiagnosesEdited(this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Date of Current Illness (Box 14)</label>
+                <input type="text" id="field-illness-date" class="field-input">
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Lines 1-6 -->
+          <div>
+            <h3 class="field-group-title">Service Lines (Box 24 A-J)</h3>
+            <div style="overflow-x: auto;">
+              <table class="services-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Date of Service</th>
+                    <th>POS</th>
+                    <th>CPT / HCPCS</th>
+                    <th>DX Ptr</th>
+                    <th>Charges ($)</th>
+                    <th>Units</th>
+                    <th>Rendering NPI</th>
+                  </tr>
+                </thead>
+                <tbody id="services-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Totals & Provider Information -->
+          <div>
+            <h3 class="field-group-title">Billing & Provider Information (Boxes 25-33)</h3>
+            <div class="field-grid-3">
+              <div class="field-item">
+                <label class="field-label">Federal Tax ID (Box 25)</label>
+                <input type="text" id="field-tax-id" class="field-input" onchange="markFieldEdited('federal_tax_id', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Patient Account No (Box 26)</label>
+                <input type="text" id="field-account-no" class="field-input" onchange="markFieldEdited('patient_account_number', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Total Charge ($) (Box 28)</label>
+                <input type="text" id="field-total-charge" class="field-input" onchange="markFieldEdited('total_charge', this.value)">
+              </div>
+            </div>
+            <div class="field-grid-2" style="margin-top: 0.5rem;">
+              <div class="field-item">
+                <label class="field-label">Billing Provider (Box 33)</label>
+                <input type="text" id="field-billing-provider" class="field-input" onchange="markFieldEdited('providers.billing_provider', this.value)">
+              </div>
+              <div class="field-item">
+                <label class="field-label">Billing NPI (Box 33a)</label>
+                <input type="text" id="field-billing-npi" class="field-input" onchange="markFieldEdited('providers.billing_npi', this.value)">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Right: AI Review, Validation & Actions Panel -->
+      <aside class="review-panel">
+        <div class="viewer-toolbar">
+          <span style="font-weight: 700; font-size: 0.95rem;">AI Review & Validation</span>
+        </div>
+
+        <div class="review-scroll">
+          
+          <!-- Confidence Gauge -->
+          <div class="confidence-gauge-card">
+            <span style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase;">Extraction Confidence</span>
+            <div id="detail-confidence-score" class="gauge-score">0.0%</div>
+            <div id="detail-status-badge"></div>
+          </div>
+
+          <!-- Field-Level Confidences -->
+          <div>
+            <h4 style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.5rem;">Field Confidence Breakdown</h4>
+            <div id="field-confidences-list" style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.775rem;"></div>
+          </div>
+
+          <!-- Validation Messages -->
+          <div>
+            <h4 style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.5rem;">Explainable Validation Rules</h4>
+            <div id="validation-messages-container" class="validation-messages-list"></div>
+          </div>
+
+          <!-- Review Actions -->
+          <div class="review-actions-footer">
+            <button class="btn-success" onclick="approveCurrentClaim()">✓ Approve Claim</button>
+            <button class="btn-warning" onclick="saveCurrentCorrections()">💾 Save Corrections</button>
+            <button class="btn-danger" onclick="rejectCurrentClaim()">✕ Flag / Reject</button>
+            <button class="btn-secondary" onclick="exportCurrentJson()" style="margin-top: 0.25rem;">Download Claim JSON</button>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{
+    "insurance_type": "MEDICARE",
+    "insured_id_number": "INS5629295",
+    "patient_name": "Williams, Sarah P",
+    "patient_dob": "01/12/1954",
+    "patient_sex": "F",
+    "insured_name": "Williams, Sarah P",
+    "insured_dob": "01/12/1954",
+    "insured_sex": "F",
+    "patient_address": {
+        "street": "9047 Elm Dr",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62704",
+        "phone": "(424) 817-5685"
+    },
+    "relationship_to_insured": "Self",
+    "insured_address": {
+        "street": "9047 Elm Dr",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62704",
+        "phone": "(424) 817-5685"
+    },
+    "other_insured_name": "",
+    "other_insured_policy_group": "",
+    "employment_related": false,
+    "auto_accident": false,
+    "auto_accident_state": "",
+    "other_accident": false,
+    "insurance_plan_name": "United Health Choice",
+    "insurance_policy_group_number": "GRP69614",
+    "another_health_benefit_plan": true,
+    "other_health_plan_name": "BlueCross BlueShield PPO",
+    "current_illness_date": "15/11/2010",
+    "referring_provider": "Dr. Carlos Williams",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "J45.909",
+        "F41.1",
+        "M54.5",
+        "K21.9"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-1857",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "05/12/2026",
+            "place_of_service": "23",
+            "procedure_code": "71046",
+            "diagnosis_pointer": "A",
+            "charges": 303.45,
+            "units": 3,
+            "provider_npi": "5342246643"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "20/12/2026",
+            "place_of_service": "11",
+            "procedure_code": "80053",
+            "diagnosis_pointer": "A",
+            "charges": 139.7,
+            "units": 1,
+            "provider_npi": "8930760884"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "07/08/2026",
+            "place_of_service": "22",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "B",
+            "charges": 167.57,
+            "units": 2,
+            "provider_npi": "9148696624"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "26/09/2026",
+            "place_of_service": "11",
+            "procedure_code": "80053",
+            "diagnosis_pointer": "C",
+            "charges": 212.02,
+            "units": 1,
+            "provider_npi": "6712542996"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "22/09/2026",
+            "place_of_service": "21",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "A",
+            "charges": 394.65,
+            "units": 2,
+            "provider_npi": "9573053599"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "29/11/2026",
+            "place_of_service": "21",
+            "procedure_code": "99213",
+            "diagnosis_pointer": "B",
+            "charges": 65.03,
+            "units": 1,
+            "provider_npi": "4288046584"
+        }
+    ],
+    "federal_tax_id": "13-9016984",
+    "patient_account_number": "SYN-721019",
+    "accept_assignment": true,
+    "total_charge": 1282.42,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "4380 Cedar Ln",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(375) 476-4649"
+    },
+    "service_facility_npi": "0470042691",
+    "billing_provider": {
+        "street": "3687 Elm Dr",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(519) 565-4509"
+    },
+    "billing_provider_npi": "4938368673",
+    "procedure_codes": [
+        "71046",
+        "80053",
+        "97530",
+        "80053",
+        "97530",
+        "99213"
+    ],
+    "date_of_service": "05/12/2026",
+    "billed_amount": 1282.42,
+    "claim_id": "CLM0049"
+}

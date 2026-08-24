@@ -1,0 +1,146 @@
+{
+    "insurance_type": "CHAMPVA",
+    "insured_id_number": "INS7355706",
+    "patient_name": "Nair, Priya K",
+    "patient_dob": "23/08/2004",
+    "patient_sex": "F",
+    "insured_name": "Johnson, Michael N",
+    "insured_dob": "04/07/2004",
+    "insured_sex": "M",
+    "patient_address": {
+        "street": "5792 Cedar Ln",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(545) 847-7662"
+    },
+    "relationship_to_insured": "Other",
+    "insured_address": {
+        "street": "2962 Pine Rd",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(573) 255-4371"
+    },
+    "other_insured_name": "",
+    "other_insured_policy_group": "",
+    "employment_related": true,
+    "auto_accident": false,
+    "auto_accident_state": "",
+    "other_accident": false,
+    "insurance_plan_name": "BlueCross BlueShield PPO",
+    "insurance_policy_group_number": "GRP40882",
+    "another_health_benefit_plan": false,
+    "other_health_plan_name": "",
+    "current_illness_date": "29/03/2026",
+    "referring_provider": "Dr. James Johnson",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "F41.1",
+        "K21.9",
+        "M54.5",
+        "J45.909"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-2358",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "17/09/2026",
+            "place_of_service": "11",
+            "procedure_code": "99214",
+            "diagnosis_pointer": "D",
+            "charges": 354.06,
+            "units": 1,
+            "provider_npi": "4046607353"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "10/12/2026",
+            "place_of_service": "11",
+            "procedure_code": "71046",
+            "diagnosis_pointer": "D",
+            "charges": 120.85,
+            "units": 1,
+            "provider_npi": "0179016591"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "08/03/2026",
+            "place_of_service": "21",
+            "procedure_code": "97140",
+            "diagnosis_pointer": "D",
+            "charges": 158.15,
+            "units": 2,
+            "provider_npi": "1203888982"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "25/02/2026",
+            "place_of_service": "23",
+            "procedure_code": "80053",
+            "diagnosis_pointer": "A",
+            "charges": 304.43,
+            "units": 1,
+            "provider_npi": "7900720085"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "15/08/2026",
+            "place_of_service": "11",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "C",
+            "charges": 210.73,
+            "units": 2,
+            "provider_npi": "1944458646"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "20/06/2026",
+            "place_of_service": "23",
+            "procedure_code": "97110",
+            "diagnosis_pointer": "B",
+            "charges": 117.39,
+            "units": 2,
+            "provider_npi": "6782405526"
+        }
+    ],
+    "federal_tax_id": "64-7929153",
+    "patient_account_number": "SYN-686084",
+    "accept_assignment": true,
+    "total_charge": 1265.61,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "4919 Maple St",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(468) 675-6163"
+    },
+    "service_facility_npi": "7642636180",
+    "billing_provider": {
+        "street": "8316 Oak Ave",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(545) 618-7893"
+    },
+    "billing_provider_npi": "9966264508",
+    "procedure_codes": [
+        "99214",
+        "71046",
+        "97140",
+        "80053",
+        "97530",
+        "97110"
+    ],
+    "date_of_service": "17/09/2026",
+    "billed_amount": 1265.61,
+    "claim_id": "CLM0078"
+}

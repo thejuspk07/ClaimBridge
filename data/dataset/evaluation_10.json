@@ -1,0 +1,19 @@
+{
+    "claims_evaluated": 10,
+    "total_checks": 530,
+    "correct_checks": 528,
+    "wrong_checks": 2,
+    "accuracy_percent": 99.62,
+    "claim_accuracies": [
+        100.0,
+        98.11320754716981,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        98.11320754716981,
+        100.0,
+        100.0,
+        100.0
+    ]
+}

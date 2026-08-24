@@ -1,0 +1,146 @@
+{
+    "insurance_type": "TRICARE",
+    "insured_id_number": "INS1940831",
+    "patient_name": "Davis, Priya T",
+    "patient_dob": "21/04/1988",
+    "patient_sex": "F",
+    "insured_name": "Thomas, Michael F",
+    "insured_dob": "04/11/1975",
+    "insured_sex": "M",
+    "patient_address": {
+        "street": "3853 Cedar Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "phone": "(402) 434-3073"
+    },
+    "relationship_to_insured": "Other",
+    "insured_address": {
+        "street": "5854 Elm Dr",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(983) 862-6214"
+    },
+    "other_insured_name": "",
+    "other_insured_policy_group": "",
+    "employment_related": false,
+    "auto_accident": false,
+    "auto_accident_state": "",
+    "other_accident": false,
+    "insurance_plan_name": "United Health Choice",
+    "insurance_policy_group_number": "GRP16144",
+    "another_health_benefit_plan": false,
+    "other_health_plan_name": "",
+    "current_illness_date": "23/09/2009",
+    "referring_provider": "Dr. Sarah Kumar",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "M54.5",
+        "F41.1",
+        "I10",
+        "J45.909"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-3543",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "27/01/2026",
+            "place_of_service": "23",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "B",
+            "charges": 460.49,
+            "units": 3,
+            "provider_npi": "9210680433"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "01/05/2026",
+            "place_of_service": "11",
+            "procedure_code": "97140",
+            "diagnosis_pointer": "D",
+            "charges": 113.58,
+            "units": 1,
+            "provider_npi": "1566459123"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "01/12/2026",
+            "place_of_service": "23",
+            "procedure_code": "99214",
+            "diagnosis_pointer": "D",
+            "charges": 219.96,
+            "units": 2,
+            "provider_npi": "1624231964"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "28/04/2026",
+            "place_of_service": "21",
+            "procedure_code": "71046",
+            "diagnosis_pointer": "C",
+            "charges": 110.21,
+            "units": 1,
+            "provider_npi": "2478908067"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "04/07/2026",
+            "place_of_service": "22",
+            "procedure_code": "71046",
+            "diagnosis_pointer": "C",
+            "charges": 306.41,
+            "units": 2,
+            "provider_npi": "9965189305"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "09/08/2026",
+            "place_of_service": "11",
+            "procedure_code": "97140",
+            "diagnosis_pointer": "D",
+            "charges": 266.03,
+            "units": 3,
+            "provider_npi": "6386324759"
+        }
+    ],
+    "federal_tax_id": "12-6650891",
+    "patient_account_number": "SYN-375604",
+    "accept_assignment": true,
+    "total_charge": 1476.68,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "6324 Birch Ct",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62704",
+        "phone": "(791) 802-1796"
+    },
+    "service_facility_npi": "6453176079",
+    "billing_provider": {
+        "street": "617 Elm Dr",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62704",
+        "phone": "(600) 765-1514"
+    },
+    "billing_provider_npi": "4926842153",
+    "procedure_codes": [
+        "97530",
+        "97140",
+        "99214",
+        "71046",
+        "71046",
+        "97140"
+    ],
+    "date_of_service": "27/01/2026",
+    "billed_amount": 1476.68,
+    "claim_id": "CLM0053"
+}

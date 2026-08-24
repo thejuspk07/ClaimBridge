@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Virtual environments
+.venv*/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PaddleOCR cache
+*.pdparams
+*.pdopt
+
+# Data artifacts (large files — keep structure, ignore bulk data)
+data/uploads/
+data/processed_api/
+data/processed/
+data/dataset/images/*.png
+data/dataset/ocr_results/
+data/dataset/extracted_10/
+data/dataset/*.png
+data/raw/*.png
+
+# Generated PDFs (bulk)
+data/dataset/pdfs/
+
+# Keep directory structure
+!data/uploads/.gitkeep
+!data/processed_api/.gitkeep
+!data/dataset/images/.gitkeep
+!data/dataset/pdfs/.gitkeep
+!data/raw/.gitkeep
+
+# Ground truth JSON should be committed (small, essential)
+# !data/dataset/ground_truth/
+
+# Logs
+*.log
+
+# Agents/Gemini config
+.agents/
+.gemini/

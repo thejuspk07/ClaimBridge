@@ -1,0 +1,146 @@
+{
+    "insurance_type": "CHAMPVA",
+    "insured_id_number": "INS9359620",
+    "patient_name": "Chen, Michael E",
+    "patient_dob": "01/07/1986",
+    "patient_sex": "F",
+    "insured_name": "Chen, Michael E",
+    "insured_dob": "01/07/1986",
+    "insured_sex": "F",
+    "patient_address": {
+        "street": "9547 Pine Rd",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80202",
+        "phone": "(839) 760-8111"
+    },
+    "relationship_to_insured": "Self",
+    "insured_address": {
+        "street": "9547 Pine Rd",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80202",
+        "phone": "(839) 760-8111"
+    },
+    "other_insured_name": "Nair, Michael D",
+    "other_insured_policy_group": "OTHGRP59264",
+    "employment_related": true,
+    "auto_accident": false,
+    "auto_accident_state": "",
+    "other_accident": false,
+    "insurance_plan_name": "BlueCross BlueShield PPO",
+    "insurance_policy_group_number": "GRP77381",
+    "another_health_benefit_plan": true,
+    "other_health_plan_name": "United Health Choice",
+    "current_illness_date": "16/05/2007",
+    "referring_provider": "Dr. Carlos Chen",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "K21.9",
+        "I10",
+        "M54.5",
+        "E11.9"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-1801",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "24/10/2026",
+            "place_of_service": "11",
+            "procedure_code": "80053",
+            "diagnosis_pointer": "A",
+            "charges": 427.59,
+            "units": 2,
+            "provider_npi": "2069866084"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "28/11/2026",
+            "place_of_service": "22",
+            "procedure_code": "97110",
+            "diagnosis_pointer": "D",
+            "charges": 125.07,
+            "units": 1,
+            "provider_npi": "7053169514"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "05/07/2026",
+            "place_of_service": "23",
+            "procedure_code": "99213",
+            "diagnosis_pointer": "D",
+            "charges": 484.95,
+            "units": 3,
+            "provider_npi": "7368753645"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "17/03/2026",
+            "place_of_service": "11",
+            "procedure_code": "99214",
+            "diagnosis_pointer": "A",
+            "charges": 106.72,
+            "units": 1,
+            "provider_npi": "9983749788"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "17/07/2026",
+            "place_of_service": "11",
+            "procedure_code": "99213",
+            "diagnosis_pointer": "A",
+            "charges": 372.98,
+            "units": 3,
+            "provider_npi": "4652593311"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "07/04/2026",
+            "place_of_service": "11",
+            "procedure_code": "71046",
+            "diagnosis_pointer": "C",
+            "charges": 149.87,
+            "units": 1,
+            "provider_npi": "7983050088"
+        }
+    ],
+    "federal_tax_id": "74-9480723",
+    "patient_account_number": "SYN-216954",
+    "accept_assignment": true,
+    "total_charge": 1667.18,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "4417 Oak Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "phone": "(333) 659-7407"
+    },
+    "service_facility_npi": "1624033215",
+    "billing_provider": {
+        "street": "4182 Maple St",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(311) 916-4596"
+    },
+    "billing_provider_npi": "6102626071",
+    "procedure_codes": [
+        "80053",
+        "97110",
+        "99213",
+        "99214",
+        "99213",
+        "71046"
+    ],
+    "date_of_service": "24/10/2026",
+    "billed_amount": 1667.18,
+    "claim_id": "CLM0043"
+}

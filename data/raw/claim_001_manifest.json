@@ -1,0 +1,688 @@
+{
+  "insurance_type": {
+    "value": "X",
+    "x": 36,
+    "y": 714,
+    "font_size": 9,
+    "kind": "checkbox"
+  },
+  "insured_id_number": {
+    "value": "INS4668136",
+    "x": 416,
+    "y": 713,
+    "font_size": 8,
+    "kind": "text"
+  },
+  "patient_name": {
+    "value": "Thomas, Sarah J",
+    "x": 64,
+    "y": 691,
+    "font_size": 9,
+    "kind": "text"
+  },
+  "insured_name": {
+    "value": "Nair, Sarah P",
+    "x": 380,
+    "y": 691,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "other_insured_name": {
+    "value": "Kumar, David L",
+    "x": 35,
+    "y": 540,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "other_insured_policy_group": {
+    "value": "OTHGRP46421",
+    "x": 35,
+    "y": 505,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insurance_policy_group_number": {
+    "value": "GRP76237",
+    "x": 380,
+    "y": 540,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insurance_plan_name": {
+    "value": "United Health Choice",
+    "x": 380,
+    "y": 447,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "current_illness_date": {
+    "value": "07/12/1991",
+    "x": 35,
+    "y": 420,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "referring_provider": {
+    "value": "Dr. Priya Williams",
+    "x": 35,
+    "y": 382,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "additional_claim_info": {
+    "value": "SYNTHETIC TEST CLAIM",
+    "x": 35,
+    "y": 350,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "resubmission_code": {
+    "value": "7",
+    "x": 380,
+    "y": 300,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "original_ref_number": {
+    "value": "ORIG123456",
+    "x": 475,
+    "y": 300,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "prior_authorization_number": {
+    "value": "PA476417",
+    "x": 380,
+    "y": 275,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "federal_tax_id": {
+    "value": "29-7273233",
+    "x": 35,
+    "y": 88,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "patient_account_number": {
+    "value": "ACC31174",
+    "x": 220,
+    "y": 88,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "patient_dob_month": {
+    "value": "12",
+    "x": 271,
+    "y": 687,
+    "font_size": 8,
+    "kind": "text"
+  },
+  "patient_dob_day": {
+    "value": "21",
+    "x": 299,
+    "y": 687,
+    "font_size": 8,
+    "kind": "text"
+  },
+  "patient_dob_year": {
+    "value": "66",
+    "x": 321,
+    "y": 687,
+    "font_size": 8,
+    "kind": "text"
+  },
+  "insured_dob_month": {
+    "value": "11",
+    "x": 390,
+    "y": 505,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insured_dob_day": {
+    "value": "08",
+    "x": 418,
+    "y": 505,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insured_dob_year": {
+    "value": "47",
+    "x": 440,
+    "y": 505,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "patient_street": {
+    "value": "9295 Oak Ave",
+    "x": 35,
+    "y": 652,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "patient_city": {
+    "value": "Springfield",
+    "x": 35,
+    "y": 615,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "patient_state": {
+    "value": "IL",
+    "x": 245,
+    "y": 615,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "patient_zip": {
+    "value": "62704",
+    "x": 35,
+    "y": 577,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "patient_phone": {
+    "value": "(933) 865-9928",
+    "x": 170,
+    "y": 577,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insured_street": {
+    "value": "3711 Cedar Ln",
+    "x": 380,
+    "y": 652,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insured_city": {
+    "value": "Denver",
+    "x": 380,
+    "y": 615,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insured_state": {
+    "value": "CO",
+    "x": 610,
+    "y": 615,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insured_zip": {
+    "value": "80202",
+    "x": 380,
+    "y": 577,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "insured_phone": {
+    "value": "(803) 484-1106",
+    "x": 510,
+    "y": 577,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "relationship": {
+    "value": "X",
+    "x": 293,
+    "y": 649,
+    "font_size": 9,
+    "kind": "checkbox"
+  },
+  "employment_related": {
+    "value": "X",
+    "x": 280,
+    "y": 508,
+    "font_size": 9,
+    "kind": "checkbox"
+  },
+  "other_accident": {
+    "value": "X",
+    "x": 280,
+    "y": 461,
+    "font_size": 9,
+    "kind": "checkbox"
+  },
+  "another_health_benefit_plan": {
+    "value": "X",
+    "x": 392,
+    "y": 409,
+    "font_size": 9,
+    "kind": "checkbox"
+  },
+  "accept_assignment": {
+    "value": "X",
+    "x": 340,
+    "y": 88,
+    "font_size": 9,
+    "kind": "checkbox"
+  },
+  "hospitalization_from": {
+    "value": "10/05/2026",
+    "x": 390,
+    "y": 382,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "hospitalization_to": {
+    "value": "12/05/2026",
+    "x": 505,
+    "y": 382,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "diagnosis_1": {
+    "value": "E11.9",
+    "x": 35,
+    "y": 300,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "diagnosis_2": {
+    "value": "F41.1",
+    "x": 170,
+    "y": 300,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "diagnosis_3": {
+    "value": "M54.5",
+    "x": 300,
+    "y": 300,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "diagnosis_4": {
+    "value": "K21.9",
+    "x": 435,
+    "y": 300,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_1_date": {
+    "value": "26/06/2026",
+    "x": 63,
+    "y": 280,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_1_place": {
+    "value": "21",
+    "x": 194,
+    "y": 280,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_1_procedure": {
+    "value": "93000",
+    "x": 235,
+    "y": 280,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_1_diagnosis_pointer": {
+    "value": "C",
+    "x": 378,
+    "y": 280,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_1_charges": {
+    "value": "786.06",
+    "x": 414,
+    "y": 280,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_1_units": {
+    "value": "3",
+    "x": 500,
+    "y": 280,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_1_provider_npi": {
+    "value": "4190268310",
+    "x": 560,
+    "y": 280,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_2_date": {
+    "value": "29/05/2026",
+    "x": 63,
+    "y": 256,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_2_place": {
+    "value": "21",
+    "x": 194,
+    "y": 256,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_2_procedure": {
+    "value": "99213",
+    "x": 235,
+    "y": 256,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_2_diagnosis_pointer": {
+    "value": "B",
+    "x": 378,
+    "y": 256,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_2_charges": {
+    "value": "836.51",
+    "x": 414,
+    "y": 256,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_2_units": {
+    "value": "2",
+    "x": 500,
+    "y": 256,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_2_provider_npi": {
+    "value": "2633229661",
+    "x": 560,
+    "y": 256,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_3_date": {
+    "value": "25/03/2026",
+    "x": 63,
+    "y": 232,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_3_place": {
+    "value": "22",
+    "x": 194,
+    "y": 232,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_3_procedure": {
+    "value": "71046",
+    "x": 235,
+    "y": 232,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_3_diagnosis_pointer": {
+    "value": "D",
+    "x": 378,
+    "y": 232,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_3_charges": {
+    "value": "329.46",
+    "x": 414,
+    "y": 232,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_3_units": {
+    "value": "3",
+    "x": 500,
+    "y": 232,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_3_provider_npi": {
+    "value": "6237088409",
+    "x": 560,
+    "y": 232,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_4_date": {
+    "value": "19/04/2026",
+    "x": 63,
+    "y": 208,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_4_place": {
+    "value": "23",
+    "x": 194,
+    "y": 208,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_4_procedure": {
+    "value": "97110",
+    "x": 235,
+    "y": 208,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_4_diagnosis_pointer": {
+    "value": "D",
+    "x": 378,
+    "y": 208,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_4_charges": {
+    "value": "436.29",
+    "x": 414,
+    "y": 208,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_4_units": {
+    "value": "3",
+    "x": 500,
+    "y": 208,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_4_provider_npi": {
+    "value": "4225258329",
+    "x": 560,
+    "y": 208,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_5_date": {
+    "value": "16/02/2026",
+    "x": 63,
+    "y": 184,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_5_place": {
+    "value": "22",
+    "x": 194,
+    "y": 184,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_5_procedure": {
+    "value": "99213",
+    "x": 235,
+    "y": 184,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_5_diagnosis_pointer": {
+    "value": "A",
+    "x": 378,
+    "y": 184,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_5_charges": {
+    "value": "229.92",
+    "x": 414,
+    "y": 184,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_5_units": {
+    "value": "1",
+    "x": 500,
+    "y": 184,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_5_provider_npi": {
+    "value": "7403959807",
+    "x": 560,
+    "y": 184,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_6_date": {
+    "value": "25/11/2026",
+    "x": 63,
+    "y": 160,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_6_place": {
+    "value": "21",
+    "x": 194,
+    "y": 160,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_6_procedure": {
+    "value": "80053",
+    "x": 235,
+    "y": 160,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_6_diagnosis_pointer": {
+    "value": "A",
+    "x": 378,
+    "y": 160,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_6_charges": {
+    "value": "349.48",
+    "x": 414,
+    "y": 160,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_6_units": {
+    "value": "1",
+    "x": 500,
+    "y": 160,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "service_6_provider_npi": {
+    "value": "4982519826",
+    "x": 560,
+    "y": 160,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "facility_street": {
+    "value": "9913 Pine Rd",
+    "x": 220,
+    "y": 55,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "facility_city": {
+    "value": "Springfield",
+    "x": 220,
+    "y": 42,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "facility_state": {
+    "value": "IL",
+    "x": 300,
+    "y": 42,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "facility_zip": {
+    "value": "62704",
+    "x": 350,
+    "y": 42,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "billing_street": {
+    "value": "5138 Oak Ave",
+    "x": 380,
+    "y": 55,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "billing_city": {
+    "value": "Austin",
+    "x": 380,
+    "y": 42,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "billing_state": {
+    "value": "TX",
+    "x": 450,
+    "y": 42,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "billing_zip": {
+    "value": "73301",
+    "x": 500,
+    "y": 42,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "facility_npi": {
+    "value": "0407714528",
+    "x": 350,
+    "y": 28,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "billing_npi": {
+    "value": "4257239645",
+    "x": 500,
+    "y": 28,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "total_charge": {
+    "value": "2967.72",
+    "x": 420,
+    "y": 88,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "amount_paid": {
+    "value": "0.00",
+    "x": 510,
+    "y": 88,
+    "font_size": 7,
+    "kind": "text"
+  },
+  "signature": {
+    "value": "SIGNED",
+    "x": 65,
+    "y": 75,
+    "font_size": 9,
+    "kind": "text"
+  }
+}

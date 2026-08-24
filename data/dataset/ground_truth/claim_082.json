@@ -1,0 +1,146 @@
+{
+    "insurance_type": "GROUP HEALTH PLAN",
+    "insured_id_number": "INS2668920",
+    "patient_name": "Davis, David T",
+    "patient_dob": "18/03/1971",
+    "patient_sex": "M",
+    "insured_name": "Johnson, James B",
+    "insured_dob": "22/11/1983",
+    "insured_sex": "F",
+    "patient_address": {
+        "street": "2136 Cedar Ln",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(287) 842-6335"
+    },
+    "relationship_to_insured": "Spouse",
+    "insured_address": {
+        "street": "8148 Maple St",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "phone": "(696) 385-1028"
+    },
+    "other_insured_name": "Thomas, James M",
+    "other_insured_policy_group": "OTHGRP83431",
+    "employment_related": false,
+    "auto_accident": false,
+    "auto_accident_state": "",
+    "other_accident": false,
+    "insurance_plan_name": "United Health Choice",
+    "insurance_policy_group_number": "GRP50261",
+    "another_health_benefit_plan": false,
+    "other_health_plan_name": "",
+    "current_illness_date": "10/03/2002",
+    "referring_provider": "Dr. Carlos Chen",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "E11.9",
+        "J45.909",
+        "K21.9",
+        "F41.1"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-5014",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "02/06/2026",
+            "place_of_service": "11",
+            "procedure_code": "71046",
+            "diagnosis_pointer": "A",
+            "charges": 210.28,
+            "units": 3,
+            "provider_npi": "0993096938"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "11/04/2026",
+            "place_of_service": "11",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "D",
+            "charges": 479.15,
+            "units": 1,
+            "provider_npi": "5750368330"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "22/11/2026",
+            "place_of_service": "23",
+            "procedure_code": "97110",
+            "diagnosis_pointer": "B",
+            "charges": 349.03,
+            "units": 1,
+            "provider_npi": "0431656396"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "11/04/2026",
+            "place_of_service": "22",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "B",
+            "charges": 428.91,
+            "units": 2,
+            "provider_npi": "9066662191"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "13/08/2026",
+            "place_of_service": "23",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "C",
+            "charges": 475.12,
+            "units": 1,
+            "provider_npi": "8029356687"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "28/05/2026",
+            "place_of_service": "11",
+            "procedure_code": "97110",
+            "diagnosis_pointer": "C",
+            "charges": 243.59,
+            "units": 2,
+            "provider_npi": "6943094803"
+        }
+    ],
+    "federal_tax_id": "20-1832571",
+    "patient_account_number": "SYN-970671",
+    "accept_assignment": true,
+    "total_charge": 2186.08,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "6041 Maple St",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80202",
+        "phone": "(266) 444-5100"
+    },
+    "service_facility_npi": "3082855937",
+    "billing_provider": {
+        "street": "7092 Elm Dr",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62704",
+        "phone": "(941) 910-1458"
+    },
+    "billing_provider_npi": "2728489139",
+    "procedure_codes": [
+        "71046",
+        "97530",
+        "97110",
+        "97530",
+        "97530",
+        "97110"
+    ],
+    "date_of_service": "02/06/2026",
+    "billed_amount": 2186.08,
+    "claim_id": "CLM0082"
+}

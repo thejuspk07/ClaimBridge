@@ -1,0 +1,146 @@
+{
+    "insurance_type": "GROUP HEALTH PLAN",
+    "insured_id_number": "INS1220922",
+    "patient_name": "Johnson, Priya M",
+    "patient_dob": "08/03/1999",
+    "patient_sex": "F",
+    "insured_name": "Johnson, Priya M",
+    "insured_dob": "08/03/1999",
+    "insured_sex": "F",
+    "patient_address": {
+        "street": "3241 Birch Ct",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(681) 753-8804"
+    },
+    "relationship_to_insured": "Self",
+    "insured_address": {
+        "street": "3241 Birch Ct",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(681) 753-8804"
+    },
+    "other_insured_name": "Martinez, David E",
+    "other_insured_policy_group": "OTHGRP78574",
+    "employment_related": false,
+    "auto_accident": true,
+    "auto_accident_state": "TX",
+    "other_accident": false,
+    "insurance_plan_name": "Cigna HMO",
+    "insurance_policy_group_number": "GRP43994",
+    "another_health_benefit_plan": true,
+    "other_health_plan_name": "United Health Choice",
+    "current_illness_date": "02/09/2025",
+    "referring_provider": "Dr. Michael Chen",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "E11.9",
+        "J45.909",
+        "M54.5",
+        "K21.9"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-7350",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "07/08/2026",
+            "place_of_service": "23",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "B",
+            "charges": 445.49,
+            "units": 1,
+            "provider_npi": "0426784855"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "28/07/2026",
+            "place_of_service": "21",
+            "procedure_code": "97110",
+            "diagnosis_pointer": "A",
+            "charges": 435.38,
+            "units": 3,
+            "provider_npi": "6189957285"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "26/05/2026",
+            "place_of_service": "11",
+            "procedure_code": "99214",
+            "diagnosis_pointer": "D",
+            "charges": 434.27,
+            "units": 2,
+            "provider_npi": "0841278060"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "28/10/2026",
+            "place_of_service": "22",
+            "procedure_code": "93000",
+            "diagnosis_pointer": "B",
+            "charges": 499.33,
+            "units": 2,
+            "provider_npi": "0159922693"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "04/07/2026",
+            "place_of_service": "21",
+            "procedure_code": "97140",
+            "diagnosis_pointer": "D",
+            "charges": 257.18,
+            "units": 3,
+            "provider_npi": "3861982679"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "12/08/2026",
+            "place_of_service": "22",
+            "procedure_code": "93000",
+            "diagnosis_pointer": "C",
+            "charges": 55.16,
+            "units": 2,
+            "provider_npi": "9335163396"
+        }
+    ],
+    "federal_tax_id": "45-9212495",
+    "patient_account_number": "SYN-123260",
+    "accept_assignment": true,
+    "total_charge": 2126.81,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "448 Pine Rd",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62704",
+        "phone": "(457) 843-8476"
+    },
+    "service_facility_npi": "1782718961",
+    "billing_provider": {
+        "street": "9810 Elm Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "phone": "(527) 381-6963"
+    },
+    "billing_provider_npi": "5623660696",
+    "procedure_codes": [
+        "97530",
+        "97110",
+        "99214",
+        "93000",
+        "97140",
+        "93000"
+    ],
+    "date_of_service": "07/08/2026",
+    "billed_amount": 2126.81,
+    "claim_id": "CLM0003"
+}

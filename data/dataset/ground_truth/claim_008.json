@@ -1,0 +1,146 @@
+{
+    "insurance_type": "MEDICARE",
+    "insured_id_number": "INS3295844",
+    "patient_name": "Williams, Priya N",
+    "patient_dob": "02/05/1956",
+    "patient_sex": "M",
+    "insured_name": "Williams, Priya N",
+    "insured_dob": "02/05/1956",
+    "insured_sex": "M",
+    "patient_address": {
+        "street": "6665 Birch Ct",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(231) 670-8985"
+    },
+    "relationship_to_insured": "Self",
+    "insured_address": {
+        "street": "6665 Birch Ct",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(231) 670-8985"
+    },
+    "other_insured_name": "Martinez, Emma N",
+    "other_insured_policy_group": "OTHGRP21739",
+    "employment_related": false,
+    "auto_accident": false,
+    "auto_accident_state": "",
+    "other_accident": false,
+    "insurance_plan_name": "United Health Choice",
+    "insurance_policy_group_number": "GRP76369",
+    "another_health_benefit_plan": false,
+    "other_health_plan_name": "",
+    "current_illness_date": "27/12/2020",
+    "referring_provider": "Dr. Carlos Davis",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "M54.5",
+        "E11.9",
+        "J45.909",
+        "K21.9"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-2033",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "17/07/2026",
+            "place_of_service": "23",
+            "procedure_code": "99214",
+            "diagnosis_pointer": "A",
+            "charges": 202.3,
+            "units": 3,
+            "provider_npi": "0952865071"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "24/10/2026",
+            "place_of_service": "23",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "C",
+            "charges": 300.79,
+            "units": 2,
+            "provider_npi": "1706798511"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "28/09/2026",
+            "place_of_service": "22",
+            "procedure_code": "99214",
+            "diagnosis_pointer": "B",
+            "charges": 204.89,
+            "units": 1,
+            "provider_npi": "2202274619"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "14/01/2026",
+            "place_of_service": "21",
+            "procedure_code": "80053",
+            "diagnosis_pointer": "C",
+            "charges": 102.42,
+            "units": 2,
+            "provider_npi": "3142444520"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "13/02/2026",
+            "place_of_service": "11",
+            "procedure_code": "97110",
+            "diagnosis_pointer": "B",
+            "charges": 413.46,
+            "units": 3,
+            "provider_npi": "4161936123"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "07/07/2026",
+            "place_of_service": "11",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "B",
+            "charges": 77.3,
+            "units": 3,
+            "provider_npi": "0979519406"
+        }
+    ],
+    "federal_tax_id": "73-8938772",
+    "patient_account_number": "SYN-928595",
+    "accept_assignment": true,
+    "total_charge": 1301.16,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "6343 Maple St",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(311) 794-8416"
+    },
+    "service_facility_npi": "5840012069",
+    "billing_provider": {
+        "street": "7300 Elm Dr",
+        "city": "Kochi",
+        "state": "KL",
+        "zip": "68201",
+        "phone": "(942) 292-8721"
+    },
+    "billing_provider_npi": "6859768553",
+    "procedure_codes": [
+        "99214",
+        "97530",
+        "99214",
+        "80053",
+        "97110",
+        "97530"
+    ],
+    "date_of_service": "17/07/2026",
+    "billed_amount": 1301.16,
+    "claim_id": "CLM0008"
+}

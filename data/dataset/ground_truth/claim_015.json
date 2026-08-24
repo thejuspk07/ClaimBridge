@@ -1,0 +1,146 @@
+{
+    "insurance_type": "MEDICARE",
+    "insured_id_number": "INS6672003",
+    "patient_name": "Thomas, Priya T",
+    "patient_dob": "31/03/1948",
+    "patient_sex": "M",
+    "insured_name": "Thomas, Michael E",
+    "insured_dob": "14/12/1977",
+    "insured_sex": "M",
+    "patient_address": {
+        "street": "6527 Pine Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "phone": "(552) 434-4381"
+    },
+    "relationship_to_insured": "Spouse",
+    "insured_address": {
+        "street": "5234 Oak Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "phone": "(512) 944-9378"
+    },
+    "other_insured_name": "Kumar, Emma S",
+    "other_insured_policy_group": "OTHGRP20349",
+    "employment_related": false,
+    "auto_accident": false,
+    "auto_accident_state": "",
+    "other_accident": false,
+    "insurance_plan_name": "Cigna HMO",
+    "insurance_policy_group_number": "GRP56627",
+    "another_health_benefit_plan": false,
+    "other_health_plan_name": "",
+    "current_illness_date": "05/07/1994",
+    "referring_provider": "Dr. Emma Kumar",
+    "hospitalization_dates": {
+        "from": "10/05/2026",
+        "to": "12/05/2026"
+    },
+    "additional_claim_info": "SYNTHETIC TRAINING CLAIM",
+    "diagnosis_codes": [
+        "E11.9",
+        "M54.5",
+        "F41.1",
+        "K21.9"
+    ],
+    "resubmission_code": "7",
+    "original_ref_number": "SYN-0001500",
+    "prior_authorization_number": "SYN-PA-3298",
+    "service_lines": [
+        {
+            "line_number": 1,
+            "date_of_service": "01/10/2026",
+            "place_of_service": "21",
+            "procedure_code": "99213",
+            "diagnosis_pointer": "C",
+            "charges": 288.49,
+            "units": 1,
+            "provider_npi": "8010485451"
+        },
+        {
+            "line_number": 2,
+            "date_of_service": "14/09/2026",
+            "place_of_service": "22",
+            "procedure_code": "99214",
+            "diagnosis_pointer": "B",
+            "charges": 189.55,
+            "units": 1,
+            "provider_npi": "8393409741"
+        },
+        {
+            "line_number": 3,
+            "date_of_service": "10/09/2026",
+            "place_of_service": "23",
+            "procedure_code": "97140",
+            "diagnosis_pointer": "A",
+            "charges": 428.0,
+            "units": 3,
+            "provider_npi": "0040285845"
+        },
+        {
+            "line_number": 4,
+            "date_of_service": "31/08/2026",
+            "place_of_service": "11",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "B",
+            "charges": 399.99,
+            "units": 3,
+            "provider_npi": "4766078409"
+        },
+        {
+            "line_number": 5,
+            "date_of_service": "04/06/2026",
+            "place_of_service": "23",
+            "procedure_code": "93000",
+            "diagnosis_pointer": "A",
+            "charges": 410.32,
+            "units": 2,
+            "provider_npi": "0633512939"
+        },
+        {
+            "line_number": 6,
+            "date_of_service": "17/12/2026",
+            "place_of_service": "22",
+            "procedure_code": "97530",
+            "diagnosis_pointer": "C",
+            "charges": 51.14,
+            "units": 2,
+            "provider_npi": "7301871853"
+        }
+    ],
+    "federal_tax_id": "26-6631106",
+    "patient_account_number": "SYN-202971",
+    "accept_assignment": true,
+    "total_charge": 1767.49,
+    "amount_paid": 0.0,
+    "signature_present": true,
+    "service_facility": {
+        "street": "5729 Cedar Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "phone": "(955) 828-9974"
+    },
+    "service_facility_npi": "1874115634",
+    "billing_provider": {
+        "street": "9470 Maple St",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80202",
+        "phone": "(603) 795-1075"
+    },
+    "billing_provider_npi": "9669758694",
+    "procedure_codes": [
+        "99213",
+        "99214",
+        "97140",
+        "97530",
+        "93000",
+        "97530"
+    ],
+    "date_of_service": "01/10/2026",
+    "billed_amount": 1767.49,
+    "claim_id": "CLM0015"
+}
