@@ -2,7 +2,7 @@
 
 ### Healthcare Claim Document Intelligence and Human Review Platform
 
-ClaimBridge is a template-aware document-intelligence prototype for processing synthetic CMS-1500 healthcare insurance claim forms.
+ClaimBridge is a template-aware document-intelligence prototype for processing synthetic CMS-1500 healthcare insurance claim forms.. 
 
 It converts uploaded PDF or image claims into structured data using PDF rendering, PaddleOCR, calibrated spatial extraction, billing-consistency validation, confidence scoring, and human review workflows.
 
