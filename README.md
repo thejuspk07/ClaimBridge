@@ -22,7 +22,7 @@ Common challenges include:
 - Charge-total inconsistencies
 - Low-confidence OCR results
 - Lack of correction history
-- Difficulty exporting structured claim data
+- Difficulty exporting structured claim data.
 
 ClaimBridge demonstrates how document AI can support this workflow while keeping a human reviewer in control.
 
